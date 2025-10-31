@@ -11,7 +11,7 @@ async function init() {
 
     // Imposta webcam
     const flip = true;
-    webcam = new tmImage.Webcam(200, 200, flip);
+    webcam = new tmImage.Webcam(400, 400, flip);
     await webcam.setup();
     await webcam.play();
     window.requestAnimationFrame(loop);
